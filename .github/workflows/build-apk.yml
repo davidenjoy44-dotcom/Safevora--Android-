@@ -22,7 +22,7 @@ jobs:
 
       - name: Restore project files
         run: |
-                    tr -d '\r' < safevora-project.txt | base64 --decode > safevora.zip
+                        cp safevora-project.txt safevora.zip
           unzip safevora.zip
 
       - name: Set up Gradle
