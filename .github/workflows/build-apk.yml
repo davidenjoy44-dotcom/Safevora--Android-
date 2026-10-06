@@ -22,7 +22,7 @@ jobs:
 
       - name: Restore project files
         run: |
-          cp "$(find . -maxdepth 1 -name 'safevora-project-v03*.txt' -print -quit)" safevora.zip
+          cp safevora-project-3.txt safevora.zip
           unzip safevora.zip
 
       - name: Set up Gradle
